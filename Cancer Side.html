@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio id="myAudio">
+  <source src="Ganjaman.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Tryk på afspil for at høre noget dope musik :3</p>
+
+<button onclick="playAudio()" type="button">Play Dope Music</button>
+<button onclick="pauseAudio()" type="button">Pause Dope Music</button> 
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+</body>
+</html>
+
+<html>
+    <body>
+        <p>Tryk på knappen for at se datoen</p>
+        <button onclick="displaydate()">Dato</button>
+        <p id="events"></p>
+        
+        <script>
+            function displaydate() {
+                document.getElementById("events").innerHTML = Date();
+            }
+        </script>
+    </body>
+</html>
+
